@@ -1,0 +1,47 @@
+@media (max-width: 375px) {
+  .main-content {
+    height: auto;
+  }
+
+  .card {
+    flex-direction: column-reverse;
+    margin: 50px auto;
+    width: 80%;
+  }
+  .card-stats {
+    padding: 30px;
+    text-align: center;
+  }
+
+  .card-stats > h1 {
+    padding-right: 0;
+    font-size: 25px;
+  }
+
+  .card-stats > p {
+    padding-right: 0;
+    font-size: 14px;
+    margin: 20px 0px 40px 0px;
+  }
+
+  .stats {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .stats-info:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .stats-info:last-child {
+    margin-bottom: 5px;
+  }
+  .card-image {
+    height: 238px;
+  }
+
+  .card-image img {
+    width: 100%;
+    height: 100%;
+  }
+}

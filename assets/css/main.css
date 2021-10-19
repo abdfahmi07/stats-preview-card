@@ -1,0 +1,119 @@
+@import url("https://fonts.google.com/specimen/Inter");
+@import url("https://fonts.google.com/specimen/Lexend+Deca");
+
+:root {
+  /* PRIMARY COLOR */
+
+  /* main background */
+  --very-dark-blue: hsl(233, 47%, 7%);
+  /* card background */
+  --dark-desaturated-blue: hsl(244, 38%, 16%);
+  /* accent */
+  --soft-violet: hsl(277, 64%, 61%);
+  --dark-violet: hsla(277, 67%, 32%, 0.6);
+
+  /* NEUTRAL COLOR */
+
+  /* main heading, stats */
+  --white-main: hsl(0, 0%, 100%);
+  /*  main paragraph */
+  --slightly-transparent-white-main: hsla(0, 0%, 100%, 0.75);
+  /* stat headings */
+  --slightly-transparent-white-stat: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--white-main);
+  background-color: var(--very-dark-blue);
+  font-family: Inter, sans-serif;
+}
+
+.main-content {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.card-stats > p,
+.stats-info p {
+  color: var(--slightly-transparent-white-main);
+}
+.card {
+  width: 75%;
+  display: flex;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: var(--dark-desaturated-blue);
+}
+
+.card-stats {
+  padding: 65px 75px 50px 65px;
+}
+
+.card-stats > h1 {
+  padding-right: 40px;
+}
+
+.card-stats > p {
+  margin: 25px 0px 60px;
+  line-height: 1.5;
+  padding-right: 80px;
+  font-size: 15px;
+}
+
+.highlight {
+  color: var(--soft-violet);
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.stats-info h2 {
+  margin-bottom: 5px;
+}
+
+.stats-info p {
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.queries {
+  text-transform: uppercase;
+}
+
+.card-image {
+  height: 410px;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  background-color: var(--dark-violet);
+  width: 100%;
+  height: 100%;
+}
+
+.footer-content {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.attribution {
+  font-size: 12px;
+  color: var(--white-main);
+}
+
+.attribution a {
+  color: var(--soft-violet);
+}
